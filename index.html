@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Crystals-collectors-Game</title>
+
+			<!-- links for css files -->
+
+		    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+			<link rel="stylesheet" type="text/css" href="assets/css/Reset.css">
+			
+			<!-- links for  jquery, javascript -->	
+			
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			 <!-- links for  jquery CDN-->	
+			
+			 <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+			
+		
+
+			
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+			
+
+
+
+</head>
+
+<body style="padding-left: 100px;padding-right: 100px">
+
+<div class="container">
+
+	<h1> Crystals-Collector-Game!</h1>
+	
+	
+		<p>You will be given a random number at the start of the game.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.  You win the game by matching your total score to the ramdom number, you lose the game if your total score goes above the random number.</br>
+		The value of each crystal is hidden from you until you click on it.  Each time when the game starts, the game will change the values of each crystal.</p>
+		<br>
+		 
+      <div class="container-images">
+ 
+		<div class="row">		
+			<div class="col-md-4">
+            	<div id="targetScore">Target Score:</div>
+            </div>
+            <div class="col-md-4">
+             	<div id="yourScore">Your Score: </div>
+            </div>			
+		  	<div class="col-md-2">
+		  	    <div id="win">Wins:</div>
+		  	</div>
+		  	<div class="col-md-2">
+		  	    <div id="loss">Loss:</div>
+		  	</div>
+	 	</div>
+	 	<!-- adding cryatal images -->
+	 	  <div class="row">
+	 	  
+	 	  <div class="col-md-12">
+			<div class="crystal">
+			<a href="#">
+				<img src="assets/images/images-1.jpg" class="click" id="crystal1" style="width:200px;height:200px;"></a>
+			<a href="#">
+				<img src="assets/images/images-2.jpg" class="click" id="crystal2" style="width:200px;height:200px;"></a>
+			<a href="#">
+				<img src="assets/images/images-3.jpg" class="click"  id="crystal3" style="width:200px;height:200px;"></a>
+			<a href="#">
+				<img src="assets/images/images.jpg"   class="click"  id="crystal4" style="width:200px;height:200px;"></a>
+
+			</div>
+  
+ 		</div>
+</div>
+<script type='text/javascript' language='javascript' src='assets/js/crystalgame.js'></script> 
+</body>
+
+</html>
+        
+        

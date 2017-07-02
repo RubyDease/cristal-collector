@@ -1,0 +1,33 @@
+* {
+  
+  text-align: center;
+  color: gray;
+
+}
+ div {
+  background: #F0F8FF; 
+
+ }
+
+.container h1 {
+  font-size: 50px;
+  height: 100px;
+  padding-top: 30px;
+}
+
+
+.container p {
+  font-size: 22px;
+  color: purple;
+  font-style: normal;
+  height: 200px;
+
+}
+.container-images {
+  height: 250px;
+  font-size: 30px;
+  padding-bottom: 20px;
+
+}
+
+
