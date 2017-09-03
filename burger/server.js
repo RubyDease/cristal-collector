@@ -1,23 +1,18 @@
 var express = require('express');
-var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+
+// set port to 3000 
+var PORT = process.env.PORT || 3000;
 
 // Create an instance of the express app.
 var app = express();
 
-// set port to 3000 or whatever heroku (deployment site) sets it to
-var PORT = process.env.PORT || 3000;
 
-// express middleware needed for serving static files. For more details
-// see here: http://expressjs.com/en/starter/static-files.html
 app.use(express.static(__dirname + '/public'));
 
 /// bodyparsers 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/*+json' }));
-app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
-app.use(bodyParser.text({ type: 'text/html' }));
 
 // override with POST having ?_method=DELETE or PUT
 app.use(methodOverride('_method'));
